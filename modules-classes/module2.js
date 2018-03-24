@@ -1,5 +1,5 @@
 import {keyVal as key, test} from './external'; // key is the alias for keyVal
-import ab from './external'; // no need of curly braces since we are importing a default value
+import ab from './external'; // no need of curly braces since we are importing a default value, also we can use whatever name we want to. like a or c instead of ab, since it's a default-ly exported value, it will always pick the default export value from the source. Also, you can have only one default export per file.
 import a from './external'; // we can also change the name of the imported variable since it will always pick the default value
 import * as imported from './external'; // using the *, we get all the objects that were exported from the other module in a form of an object.
 // we must provide the alias

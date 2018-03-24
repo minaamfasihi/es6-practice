@@ -53,5 +53,5 @@ let max = new Max(28);
 max.greetTwice();
 max.greetTwice2();
 
-console.log(max.__prototype__ == Person.prototype); // false
-console.log(max.__prototype__ == Max.prototype); // true
+console.log(max.__proto__ == Person.prototype); // false
+console.log(max.__proto__ == Max.prototype); // true
