@@ -29,5 +29,18 @@ let colorArray = ["Orange", "silver"]
 then we cant pass colorArray in displayColors function because the rest operator expects variable number of individual elements.
 So, here we can do:
 displayColors(message, ...colorArray); // ...colorArray will split the array elements into comma-separated elements.
+- - object literals:
+if the key and value are same, you can simply omit the value. 
+let firstname = "munnu"
+let person = {
+    firstname
+}
+console.log(person.firstname);
 
-
+- function createPerson(firstname, lastname) {
+    let fullname = firstname + " " + lastname;
+    return { firstname, lastname, fullname }; // you can do this in es6
+}
+let p = createPerson("Ross", "Geller")
+console.log(p.firstname); // Ross
+console.log(p.lastname); // Geller
