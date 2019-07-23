@@ -44,3 +44,25 @@ console.log(person.firstname);
 let p = createPerson("Ross", "Geller")
 console.log(p.firstname); // Ross
 console.log(p.lastname); // Geller
+
+- We can use functions in a new way in objects when returning from functions:
+function createPerson(firstname, lastname) {
+    let fullname = firstname + " " + lastname;
+    return { firstname, 
+    lastname, 
+    fullname, 
+    isSenior() {
+        return age > 60;
+    } 
+    }; 
+}
+
+- es6 allows us to have spaces between name of a key in an object literal:
+let ln = "last name" // we can have variable names for keys in object literal
+let person = {
+    "first name": "Chandler",
+    [ln]: "Bing"
+}
+console.log(person["first name"]) // only caveat is that now you cannot use the dot notation, you have to use square brackets.
+
+
